@@ -1,13 +1,16 @@
-﻿Console.Clear();
+﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+
+Console.Clear();
 Console.WriteLine("Введите первое число: ");
-int a = Convert.ToInt32(Console.ReadLine());
+int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
-int b = Convert.ToInt32(Console.ReadLine());
-if (a == b * b)
+int number2 = Convert.ToInt32(Console.ReadLine());
+
+if (number1 > number2)
 {
-    Console.WriteLine($"Число {a} является квадратом числа {b}");
+    Console.WriteLine($"Число {number1} большее, число {number2} меньшее");
 }
 else
 {
-    Console.WriteLine($"Число {a} не является квадратом числа {b}");
+    Console.WriteLine($"Число {number2} большее, число {number1} меньшее");
 }

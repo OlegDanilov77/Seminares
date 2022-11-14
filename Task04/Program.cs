@@ -1,10 +1,15 @@
-﻿// Выводим числа от -N до N
-Console.WriteLine("Введите число N: ");
-int number = Convert.ToInt32(Console.ReadLine());
+﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-int count = -number;
-while (count <= number)
+Console.WriteLine("Введите первое число: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+
+if (number1 > number2)
 {
-    Console.Write($"{count} ");
-    count++;
+    Console.WriteLine($"Число {number1} большее, число {number2} меньшее");
+}
+else
+{
+    Console.WriteLine($"Число {number2} большее, число {number1} меньшее");
 }
