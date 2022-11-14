@@ -1,15 +1,14 @@
-﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-
+﻿// Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 Console.WriteLine("Введите первое число: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите третье число: ");
+int number3 = Convert.ToInt32(Console.ReadLine());
 
-if (number1 > number2)
-{
-    Console.WriteLine($"Число {number1} большее, число {number2} меньшее");
-}
-else
-{
-    Console.WriteLine($"Число {number2} большее, число {number1} меньшее");
-}
+int maximal = number1;
+
+if (number2 > maximal) maximal = number2;
+if (number3 > maximal) maximal = number3;
+
+    Console.WriteLine($"Максимальное число: {maximal}");
