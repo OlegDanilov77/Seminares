@@ -39,6 +39,6 @@ if(what == 2)
 }
 
 Console.SetCursorPosition(x,y);
-Console.WriteLine("+");
+Console.WriteLine("Ш");
 count++;
 }
