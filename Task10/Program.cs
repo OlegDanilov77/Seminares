@@ -10,6 +10,8 @@ Console.Clear();
 Wrong: Console.WriteLine("Введите трехзачное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if (number < 0) number = -number;
+
 if (number < 100 || number > 999)
 {
     Console.WriteLine("Введенное число некорректно");
@@ -17,6 +19,7 @@ if (number < 100 || number > 999)
 }
 
 int result = (number / 10) % 10;
+
 // если через целочисленное деление:
 // int result = (number/10)-((number/100)*10);
 

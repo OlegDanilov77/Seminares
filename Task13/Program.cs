@@ -16,7 +16,10 @@ if (Convert.ToInt32(number) < 100)
 
 double numRazrjad = Math.Pow(10, number.Length - 3);
 // пришлось делать дубль поскольку возведение в степень не работает с инт
-int result = (Convert.ToInt32(number) / Convert.ToInt32(numRazrjad))%10;
+int result = (Convert.ToInt32(number) / Convert.ToInt32(numRazrjad)) % 10;
+
+
+
 
 Console.WriteLine($"Третья цифра введенного числа: {result}");
 
