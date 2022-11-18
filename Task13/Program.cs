@@ -6,24 +6,22 @@
 // 32679 -> 6
 Console.Clear();
 Console.WriteLine("Введите число: ");
-string number = Console.ReadLine();
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (Convert.ToInt32(number) < 100)
+if (number < 0) number = -number;
+
+if (number < 100)
 {
     Console.WriteLine("У введенного числа третьей цифры нет");
     goto End;
 }
 
-double numRazrjad = Math.Pow(10, number.Length - 3);
+double numRazrjad = Math.Pow(10, Convert.ToString(number).Length - 3);
 // пришлось делать дубль поскольку возведение в степень не работает с инт
-int result = (Convert.ToInt32(number) / Convert.ToInt32(numRazrjad)) % 10;
-
-
-
+int result = (number / Convert.ToInt32(numRazrjad)) % 10;
 
 Console.WriteLine($"Третья цифра введенного числа: {result}");
 
 End:;
 
 // Выглядит сложно, зато работает с числами до 10 знаков
-
