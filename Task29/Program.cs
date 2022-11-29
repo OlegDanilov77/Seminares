@@ -3,28 +3,33 @@
 // 1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
 
 Console.Clear();
-System.Console.WriteLine("Введите число: ");
+System.Console.WriteLine("Введите число элементов массива: ");
 int number = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите минимальное случайное число: ");
+int minValue = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Введите максимальное случайное число: ");
+int maxValue = Convert.ToInt32(Console.ReadLine());
 
-int[] array = new int[8];
+int[] array = new int[number];
 
 Random rnd = new Random();
 
-void Init(int maxValue)
+void InitArray(int min, int max)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        array [i] = rnd.Next(0, maxValue);
+        array [i] = rnd.Next(min, max);
     }
 }
 
-void Print();
+void PrintArray()
 {
     for (int i = 0; i < array.Length; i++)
     {
-        System.Console.Write($"{array [i]}, ");
+        System.Console.Write($"{array [i]} ");
     }
     
 }
 
-Init(number);
+InitArray(minValue, maxValue);
+PrintArray();
