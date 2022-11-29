@@ -26,28 +26,13 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-// void ReverseArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length / 2; i++)
-//     {
-//         int temp = array[i];
-//         array[i] = array[array.Length - 1 -i];
-//         array[array.Length - 1 -i] = temp;
-//     }
-// }
-
-// int[] arr = CreateArrayRndInt(5, 1, 9);
-// PrintArray[arr];
-// ReverseArray[arr];
-// PrintArray[arr];
-
-void ReverseArray (int[] array)
+void ReverseArray(int[] array)
 {
-    for (int i = 0; i < array.Length / 2; i++) // i = 1
+    for (int i = 0; i < array.Length / 2; i++)
     {
-        int temp = array[i]; // 2
-        array[i] = array[array.Length - 1 - i]; // 2 - 4
-        array[array.Length - 1 - i] = temp; 
+        int temp = array[i];
+        array[i] = array[array.Length - 1 -i];
+        array[array.Length - 1 -i] = temp;
     }
 }
 
@@ -55,5 +40,20 @@ int[] arr = CreateArrayRndInt(5, 1, 9);
 PrintArray(arr);
 ReverseArray(arr);
 PrintArray(arr);
-Array.Reverse(arr);
-PrintArray(arr);
+
+// void ReverseArray (int[] array)
+// {
+//     for (int i = 0; i < array.Length / 2; i++) // i = 1
+//     {
+//         int temp = array[i]; // 2
+//         array[i] = array[array.Length - 1 - i]; // 2 - 4
+//         array[array.Length - 1 - i] = temp; 
+//     }
+// }
+
+// int[] arr = CreateArrayRndInt(5, 1, 9);
+// PrintArray(arr);
+// ReverseArray(arr);
+// PrintArray(arr);
+// Array.Reverse(arr);
+// PrintArray(arr);
