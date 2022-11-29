@@ -8,6 +8,8 @@ double numA = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите число В: ");
 double numB = Convert.ToDouble(Console.ReadLine());
 
+if (numB < 0)  numB = -numB;
+
 double Qube(double num1, double num2)
 {
     double res = 1;
