@@ -5,9 +5,9 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 Console.Clear();
-System.Console.WriteLine("Введите число строк массива: ");
+Console.WriteLine("Введите число строк массива: ");
 int numberM = Convert.ToInt32(Console.ReadLine());
-System.Console.WriteLine("Введите число столбцов массива: ");
+Console.WriteLine("Введите число столбцов массива: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
 double[,] NewDouble(int numM, int numN)
