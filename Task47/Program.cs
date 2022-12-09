@@ -18,7 +18,7 @@ double[,] NewDouble(int numM, int numN)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
-            arr[i, j] = (rnd.Next(-100, 100));
+            arr[i, j] = Convert.ToDouble(rnd.Next(-100, 100)) / 10;
         }
     }
     return arr;
