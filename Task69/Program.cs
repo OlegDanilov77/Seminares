@@ -10,7 +10,7 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
 
-int DegreeNumber(int number, int degree)
+double DegreeNumber(int number, int degree)
 {
     if (degree == 0) return 1;
     return DegreeNumber(number, degree - 1) * number;
