@@ -1,12 +1,11 @@
-﻿Console.Clear();
-Console.WriteLine("Введите строку массива: ");
+﻿Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-Natural(number);
+NaturalNumbers(number);
 
-void Natural(int num)
+void NaturalNumbers (int num)
 {
-    if (num == 0) return;
-    Natural(num - 1);
+    if (num > 0) return;
+    NaturalNumbers (num - 1);
     Console.Write($"{num} ");
 }
